@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 border">
+                <h5>Accordion Item</h5><br>
+                <h6>Normal Accordation</h6>
+                <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading1">
+                            <button class ="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-control="collapseOne">
+                                Accordion Item 1
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse-show" aria-labeledby="heading1" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>Accordion Body</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="heading2">
+                            <button class ="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-control="collapseTwo">
+                                Accordion Item 2
+                            </button>
+                        </h3>
+
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labeledby="heading2" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>Accordion Body</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h6>Accordation-Flush</h6>
+                <div class="accordion accordion-flush" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item 1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">Accordation Body</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item 2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Accordation Body</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-3 border"><!--Alert starts-->
+                <h5>Alerts</h5>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="alert alert-primary" role="alert">Alert Primary</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="alert alert-secondary" role="alert">Alert Secondary</div>
+                    </div>
+                    <div class="col-4"> 
+                        <div class="alert alert-success" role="alert">Alert Success</div>
+                    </div>
+                </div>
+                
+                <h6>Alert Links</h6>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="alert alert-danger" role="alert">Simpe alert <a class="alert-link">with link</a></div>
+                    </div>
+                
+                    <div class="col-4">
+                        <div class="alert alert-warning" role="alert">Simpe alert <a class="alert-link">with link</a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="alert alert-info" role="alert">Simpe alert <a class="alert-link">with link</a></div>
+                    </div>
+                </div>
+
+                <h6>Alert with Heading</h6>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-light" role="alert">
+                            <h4 class="alert-heading">Alert Heading</h4>
+                            <p>Alert paragraph</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h6>Alert Dimmisable</h6>
+                <div class="row">
+                    <div class="col">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Hey Stop</strong> You should check the fileds before submitting.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Alert ends-->
+        <div class="col-3 border"><!--Badges Starts-->
+                <h5>Badges</h5>
+                <h6 class="text-secondary">Badges with headings</h6>
+                <div class="row border p-2 mt-2">
+                    <div class="col-6">
+                        <h5>H5 <span class="badge bg-secondary">New</span></h5>
+                    </div>
+                    <div class="col-6">
+                        <h6>H6 <span class="badge bg-secondary">New</span></h6>
+                    </div>
+                </div>
+
+                <h6 class="text-secondary">Badges with Buttons</h6>
+                <div class="row border p-2 mt-2">
+                    <div class="col">
+                        <button type="button" class="btn btn-small btn-primary">
+                            Notification <span class="badge bg-secondary">6</span>
+                        </button>
+                    </div>
+                </div>
+
+                <h6 class="text-secondary">Badges with Buttons Positioned</h6>
+                <div class="row border p-2 mt-2">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-small btn-primary position-relative">
+                            Notification <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">6</span>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-small btn-primary position-relative">
+                            Notification 
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 badge rounded-circle bg-danger">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <h6 class="text-secondary">Badges with Background colors</h6>
+                <div class="row border p-2 mt-2">
+                    <div class="col-6">
+                        <span class="badge bg-warning">Warning</span>
+                    </div>
+                    <div class="col-6">
+                        <span class="badge bg-success">Success</span>
+                    </div>
+                </div>
+
+                <h6 class="text-secondary">Pill Badges</h6>
+                <div class="row border p-2 mt-2">
+                    <div class="col-6">
+                        <span class="badge rounded-pill bg-warning">Warning</span>
+                    </div>
+                    <div class="col-6">
+                        <span class="badge rounded-pill bg-success">Success</span>
+                    </div>
+                </div>
+        </div><!--Badges ends-->
+        <div class="col-3 border"><!--breadcrumb starts-->
+            <div class="row">
+                <h6>Breadcrumb Deviders</h6>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            <li class="breadcrumb-item"><a href="#">About</a></li>
+                            <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+                        </ol>
+                    </nav>
+                </div>
+
+            <div class="row">
+                    <h6>Breadcrumb Deviders with ></h6>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            <li class="breadcrumb-item"><a href="#">About</a></li>
+                            <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+                        </ol>
+                    </nav>
+            </div>
+
+            <div class="row">
+                <h6>Breadcrumb Deviders without symbol</h6>
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!--breadcrumb ends-->
+        </div>
+    </div><!--1st row ends-->
+    <div class="row">     
+        <div class="col-3  border"><!--Button starts-->
+            <h5>Button</h5>
+            <h6 class="text-secondary">Coloured Buttons</h6>
+            <div class="row mt-2 p-2 border">
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+
+                <div class="col-4">
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                </div>
+
+                <div class="col-4">
+                    <button type="button" class="btn btn-success">Success</button>
+                </div>
+            </div>
+
+            <h6 class="text-secondary"> Button Types</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col">
+                        <a class="btn btn-primary" href="#" role="button">Link</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary" href="#" type="submit">Submit</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary" href="#" role="button">Button</a>
+                    </div>
+            </div>
+
+            <h6 class="text-secondary"> Button Outline</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                    </div>
+            </div>
+
+            <h6 class="text-secondary"> Button Sizes</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    </div>
+            </div>
+
+            <h6 class="text-secondary"> Disabled Buttons</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary btn-lg" disabled>Button 1</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary btn-sm" disabled>Button 2</button>
+                    </div>
+            </div>
+
+            <h6 class="text-secondary">Full Width Buttons</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-info" type="button">Button</button>
+                            <button class="btn btn-info" type="button">Button</button>
+                        </div>
+                    </div>
+                   
+            </div>
+
+            <h6 class="text-secondary">Toggle Buttons</h6>
+            <div class="row mt-2 p-2 border">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">
+                            Active toggle button
+                        </button>
+                    </div>
+                   
+            </div>
+           
+        </div><!--Button ends-->
+        
+        <div class="col-3 border"><!--Button group starts-->
+            <h5>Button Group</h5>
+            <h6>Button Group with active link</h6>
+            <div class="row border mt-2 p-2">
+                <div class="col">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary active" area-current="page">Home</a>
+                        <a href="#" class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6>Mixed Buttons Group</h6>
+            <div class="row border mt-2 p-2">
+                <div class="col">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-warning" area-current="page">Home</button>
+                        <button href="#" class="btn btn-info">Link</button>
+                    </div>
+                </div>
+            </div>
+
+            <h6>Checkbox and radio button Group</h6>
+            <div class="row border mt-2 p-2">
+                <div class="col-6">
+                    <div class="btn-group" role="group" aria-label="checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="check1" autocomplete="off">
+                        <label class="btn btn-outline-info" for="check1">Check 1</label>
+                      
+                        <input type="checkbox" class="btn-check" id="check2" autocomplete="off">
+                        <label class="btn btn-outline-info" for="check2">Check 2</label>
+                      </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="btn-group" role="group" aria-label="radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="radio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-info" for="radio1">Radio 1</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="radio2" autocomplete="off">
+                        <label class="btn btn-outline-info" for="radio2">Radio 2</label>
+                      </div>
+                </div>
+            </div>
+
+            <h6>Button Toolbar</h6>
+            <div class="row border mt-2 p-2">
+                <div class="col">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-info">1</button>
+                          <button type="button" class="btn btn-info">2</button>
+                          
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                          <button type="button" class="btn btn-warning">5</button>
+                          <button type="button" class="btn btn-warning">6</button>
+                          
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Third group">
+                          <button type="button" class="btn btn-danger">8</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <h6>Vertical Button</h6>
+            <div class="row border mt-2 p-2">
+                <div class="col">
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-danger">Button 1</button>
+                        <button type="button" class="btn btn-danger">Button 2</button>
+                        <button type="button" class="btn btn-danger">Button 3</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     
+    <div class="col-md-3 border">
+        <h5>Card</h5>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Card Header
+                    </div>
+                        <img src="user-icon.jpg" class="card-img-top" alt="user-icon">
+                   
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">first item</li>
+                        <li class="list-group-item">second item</li>
+                        <li class="list-group-item">third item</li>
+                      </ul>
+                    <div class="card-body">
+                      <h5 class="card-title">This is Card Title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">This is  Card Subtitle</h6>
+                      <p class="card-text">this is example of card's content.</p>
+                      <a href="#" class="btn btn-primary">Button1</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 border">
+        <h5>carousel</h5>
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="background-2.jpg" class="d-block w-100" alt="slide1">
+                        <div class="carousel-caption d-none d-md-block text-white">
+                          <h5>First slide label</h5>
+                          <p>This is first first slide.</p>
+                        </div>
+                      </div>
+                     
+                      <div class="carousel-item">
+                        <img src="background-3.jpg" class="d-block w-100" alt="slide2">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second  slide label</h5>
+                          <p>This is Second Slide</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </div><!--2nd row ends-->
+    <div class="row"><!--3rd row starts-->
+        
+        <div class="col-md-3 border">
+            <h5>Close Button</h5>
+            <h6>Button Close</h6>
+            <div class="row border">
+                <div class="col">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+            </div>
+            <h6>Close Button Disabled</h6>
+            <div class="row border">
+                <div class="col">
+                    <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                </div>
+            </div>
+            <h6>Close Button White</h6>
+            <div class="row border bg-dark">
+                <div class="col">
+                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 border"><!--Collapse starts-->
+            <h5>Collapse</h5>
+            
+            <div class="row border p-5">
+                <div class="col">
+                    <p>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Link with href
+                        </a>
+                      </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                            Card Body
+                            </div>
+                       </div>
+                </div>
+            </div>
+            <div class="row border p-5">
+                    <div class="col">
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                Button with data-bs-target
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                            Card Body
+                            </div>
+                    
+                        </div>  
+                    </div>
+                
+            </div>
+            
+        </div><!--Collapse ends-->
+
+        <div class="col-md-3 border"><!--Dropdown starts-->
+            <h5>Dropdowns</h5>
+            <h6>Single Dropdown</h6>
+            <div class="row border">
+                <div class="col">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                         Action
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action 1</a></li>
+                            <li><a class="dropdown-item" href="#">Action 2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Action
+                           </button>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="#">Action 1</a></li>
+                               <li><a class="dropdown-item" href="#">Action 2</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                           <li><a class="dropdown-item" href="#">Separated link</a></li>
+                           </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border">
+                <h6>Split Dropdown button</h6>
+                <div class="col">
+               <div class="btn-group">
+                        <button type="button" class="btn btn-danger">Action</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border">
+                <h6>Navbar Dropdown</h6>
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Acton 2/a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+
+            <div class="row border p-2">
+                <h6>Dropup Button</h6>
+                <div class="col">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropup
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Acton 2</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row border p-2">
+                    <h6>Dropup Left and Right</h6>
+                    <div class="col-6">
+                        <div class="btn-group dropend">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropright
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Acton 2</a></li>
+                            </ul>
+                          </div>
+    
+                    </div>
+
+                    <div class="col-6">
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropstart
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Acton 2</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+            </div>
+        </div>
+        </div><!--Dropdown ends-->
+        <div class="col-md-3">
+            <div class="row">
+                <h6>List Group</h6>
+                <div class="col">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                          The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Second Link</a>
+                        <a href="#" class="list-group-item list-group-item-action">Third Link</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row border">
+                <h6>Listgroup Flush</h6>
+                <div class="col">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">First Item</li>
+                        <li class="list-group-item">Second Item</li>
+                        <li class="list-group-item">Third Item</li>
+                      </ul>
+                </div>
+            </div>
+
+            <div class="row border">
+                <h6>List Group Numbers</h6>
+                <div class="col">
+                    <ul class="list-group list-group-flush">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Subheading</div>
+                                Cras justo odio
+                              </div>
+                              <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Subheading</div>
+                                Cras justo odio
+                              </div>
+                              <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                          </ol>
+                      </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 border">
+
+                <div class="row">
+                    <h5>Modals</h5>
+                    <div class="col-12">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                            </button>
+      
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Model Body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                             </div>
+                            </div>
+                            </div>
+                            </div>
+    
+                    </div>
+                </div>
+                    
+                <!--<div class="row border">
+                    <div class="col-12">
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+  
+               
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         gasjdtyudsjkdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        
+        </div>-->
+        </div>       
+            
+            <div class="col-md-3">
+                <div class="row">
+                    <h5>Nav Links</h5>
+                    <div class="col">
+                        <ul class="nav justify-content-end bg-warning">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <h6>Nav Vertical</h6>
+                    <div class="col">
+                        <ul class="nav flex-column bg-info">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                    </div>
+                    
+                </div>
+                <div class="row pt-2">
+                    <h6>Nav with Tabs</h6>
+                    <div class="col">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h6>Navbar</h6>
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">Navbar</a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                  </li>
+                                </ul>
+                                <form class="d-flex">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                              <a class="navbar-brand">Navbar</a>
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+       
+ </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
